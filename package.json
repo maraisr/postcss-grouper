@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "tslint -t verbose -c tslint.json $(find ./src -name *.ts)",
-    "test": "ava $(find ./test -name *-spec.js)",
-    "compile": "rimraf dist/* && tsc && uglifyjs dist/index.js --in-source-map dist/index.js.map --source-map dist/index.js.map -m -b -o dist/index.js",
+    "test": "nyc --reporter lcov ava $(find ./test -name *-spec.js)",
+    "compile": "rimraf dist/* && tsc && uglifyjs dist/index.js --in-source-map dist/index.js.map --source-map dist/index.js.map --source-map-url index.js.map -m -b -o dist/index.js",
     "go": "npm run lint && npm run compile && npm run test"
   },
   "repository": {
@@ -31,6 +31,8 @@
   },
   "devDependencies": {
     "ava": "^0.15.2",
+    "codecov": "^1.0.1",
+    "nyc": "^7.1.0",
     "rimraf": "^2.5.4",
     "tslint": "^3.14.0",
     "typescript": "^1.8.10",

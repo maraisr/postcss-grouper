@@ -37,4 +37,4 @@ module.exports = postcss.plugin("postcss-grouper", function(r) {
         }
     };
 });
-//# sourceMappingURL=dist/index.js.map
+//# sourceMappingURL=index.js.map
