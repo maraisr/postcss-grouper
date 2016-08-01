@@ -7,7 +7,7 @@
 		"experimentalDecorators": true,
 		"removeComments": true,
 		"outDir": "dist",
-		"sourceMap": true
+		"inlineSourceMap": true
 	},
 	"files": [
 		"node_modules/postcss/d.ts/postcss.d.ts",
