@@ -23,32 +23,18 @@ postcss([
 	})
 ]);
 ```
+Input:
 
-<table>
-  <thead>
-    <tr>
-      <th align="center">Before</th>
-      <th align="center">After</th>
-  <tbody>
-    <tr>
-      <td align="left">
-        <div class="highlight highlight-source-css">
-<pre>
+```css
 html { color: black; }
 .foo { color: white; }
 html { margin-top: 10px; }
-</pre>
-        </div>
-      </td>
-      <td align="left">
-        <div class="highlight highlight-source-css">
-<pre>
+```
+
+Output:
+
+```css
 html { color: black; }
 html { margin-top: 10px; }
 .foo { color: white; }
-</pre>
-        </div>
-      </td>
-    </tr>
-  </tbody>
-</table>
+```
