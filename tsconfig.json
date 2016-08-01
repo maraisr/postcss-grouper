@@ -1,0 +1,16 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es5",
+		"noImplicitAny": true,
+		"experimentalDecorators": true,
+		"removeComments": true,
+		"outDir": "dist",
+		"inlineSourceMap": true
+	},
+	"files": [
+		"node_modules/postcss/d.ts/postcss.d.ts",
+		"src/index.ts"
+	]
+}
