@@ -1,0 +1,26 @@
+{
+  "name": "postcss-grouper",
+  "version": "0.0.1",
+  "description": "PostCSS plugin that groups selectors together.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maraisr/postcss-grouper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maraisr/postcss-grouper/issues"
+  },
+  "homepage": "https://github.com/maraisr/postcss-grouper#readme",
+  "keywords": [
+    "postcss",
+    "selectors",
+    "group",
+    "grouping",
+    "css"
+  ],
+  "author": "Marais Rossouw <me@marair.com>",
+  "license": "MIT"
+}
