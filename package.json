@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "tslint -t verbose -c tslint.json $(find ./src -name *.ts)",
     "test": "ava $(find ./test -name *-spec.js)",
-    "compile": "rimraf dist/* && tsc"
+    "compile": "rimraf dist/* && tsc && uglifyjs dist/index.js --in-source-map dist/index.js.map --source-map dist/index.js.map -m -b -o dist/index.js",
+    "go": "npm run lint && npm run compile && npm run test"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "ava": "^0.15.2",
     "rimraf": "^2.5.4",
     "tslint": "^3.14.0",
-    "typescript": "^1.8.10"
+    "typescript": "^1.8.10",
+    "uglify-js": "^2.7.0"
   }
 }
