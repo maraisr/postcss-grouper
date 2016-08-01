@@ -25,11 +25,11 @@ postcss([
 <table>
   <thead>
     <tr>
-      <th>Before</th>
-      <th>After</th>
+      <th align="center">Before</th>
+      <th align="center">After</th>
   <tbody>
     <tr>
-      <td>
+      <td align="left">
         <div class="highlight highlight-source-css">
 <pre>
 html { color: black; }
@@ -38,7 +38,7 @@ html { margin-top: 10px; }
 </pre>
         </div>
       </td>
-      <td>
+      <td align="left">
         <div class="highlight highlight-source-css">
 <pre>
 html { color: black; }

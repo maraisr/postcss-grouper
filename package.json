@@ -1,6 +1,6 @@
 {
   "name": "postcss-grouper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "PostCSS plugin that groups selectors together.",
   "main": "dist/index.js",
   "scripts": {
