@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.ts"],"names":["postcss","require","module","exports","plugin","opts","css"],"mappings":"YAAA,IAAYA,SAAOC,QAAM,UAEzBC,QAAAC,QAASH,QAAQI,OAAO,kBAAmB,SAACC,GAC3C,MAD2C,UAAAA,IAAAA,MACpC,SAACC","file":"dist/index.js","sourceRoot":""}
