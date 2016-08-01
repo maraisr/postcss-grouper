@@ -1,3 +1,5 @@
 .*
 *.md
 tsconfig.json
+tslint.json
+test
