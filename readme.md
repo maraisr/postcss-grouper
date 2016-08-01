@@ -3,6 +3,7 @@ PostCSS Grouper
 
 [![NPM version](https://img.shields.io/npm/v/postcss-grouper.svg?style=flat-square)](https://www.npmjs.com/package/postcss-grouper)
 [![Travis](https://img.shields.io/travis/maraisr/postcss-grouper.svg?style=flat-square)](https://travis-ci.org/maraisr/postcss-grouper)
+[![Codecov](https://img.shields.io/codecov/c/github/maraisr/postcss-grouper.svg?style=flat-square)](https://codecov.io/github/maraisr/postcss-grouper)
 
 A plugin that'll group selectors you want together. My effort to have sexier css on the web.
 
