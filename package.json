@@ -6,7 +6,6 @@
   "scripts": {
     "lint": "tslint -t verbose -c tslint.json $(find ./src -name *.ts)",
     "test": "ava $(find ./test -name *-spec.js)",
-    "posttest": "npm run lint",
     "compile": "rimraf dist/* && tsc && uglifyjs dist/index.js --in-source-map dist/index.js.map --source-map dist/index.js.map -m -c -o dist/index.js"
   },
   "repository": {
