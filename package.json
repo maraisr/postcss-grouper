@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "tslint -t verbose -c tslint.json $(find ./src -name *.ts)",
-    "compile": "rimraf dist/* && tsc && uglifyjs dist/index.js --in-source-map dist/index.js.map --source-map dist/index.js.map -m -c -o dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava $(find ./test -name *-spec.js)",
+    "posttest": "npm run lint",
+    "compile": "rimraf dist/* && tsc && uglifyjs dist/index.js --in-source-map dist/index.js.map --source-map dist/index.js.map -m -c -o dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "postcss": "^5.1.1"
   },
   "devDependencies": {
+    "ava": "^0.15.2",
     "rimraf": "^2.5.4",
     "tslint": "^3.14.0",
     "typescript": "^1.8.10",
