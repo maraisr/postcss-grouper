@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "tslint -t verbose -c tslint.json $(find ./src -name *.ts)",
-    "test": "nyc --reporter lcov ava $(find ./test -name *-spec.js)",
+    "test": "nyc --reporter=lcov ava ./test/**/*.js && nyc report",
     "compile": "rimraf dist/* && tsc && uglifyjs dist/index.js --in-source-map dist/index.js.map --source-map dist/index.js.map --source-map-url index.js.map -m -b -o dist/index.js",
     "go": "npm run lint && npm run compile && npm run test"
   },
